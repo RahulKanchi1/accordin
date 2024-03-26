@@ -1,0 +1,62 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #181819;
+}
+
+.accordion {
+    max-width: 600px;
+    margin: 20px auto;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.accordion-item {
+    border-bottom: 1px solid #e9ecef;
+}
+
+.accordion-heading {
+    background-color: #f8f9fa;
+    padding: 20px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 8px;
+}
+
+.accordion-heading:hover {
+    background-color: #faf38a;
+}
+
+.accordion-heading h2 {
+    margin: 0;
+    font-size: 18px;
+    color: #333;
+}
+
+.icon {
+    font-size: 24px;
+    transition: transform 0.3s ease;
+}
+
+.accordion-content {
+    padding: 20px;
+    display: none;
+    border-bottom: 1px solid #fcfdfe;
+    background-color: skyblue;
+    border-radius: 0 0 8px 8px;
+}
+
+.accordion-content p {
+    margin: 0;
+    color: #555;
+   
+    line-height: 1.6;
+}
+
+.active .accordion-content {
+    display: block;
+}
